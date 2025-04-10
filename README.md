@@ -25,7 +25,7 @@
 
 This image is designed to work on [RunPod](https://runpod.io?ref=2xxro4sy).
 You can use my custom [RunPod template](
-https://runpod.io/console/deploy?template=aeyibwyvzy&ref=2xxro4syy)
+https://runpod.io/console/deploy?template=dkkix0iwac&ref=2xxro4sy)
 to launch it on RunPod.
 
 ## Building the Docker image
