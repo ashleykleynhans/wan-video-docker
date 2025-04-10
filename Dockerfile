@@ -29,8 +29,9 @@ RUN git clone https://github.com/Wan-Video/Wan2.1.git && \
 # Install the dependencies for Wan2.1
 WORKDIR /Wan2.1
 RUN source /venv/bin/activate && \
-    pip3 install -r requirements.txt && \
-    pip3 install . && \
+    pip3 install --upgrade pip && \
+    pip3 install --upgrade setuptools wheel && \
+    pip3 install --no-cache-dir -r requirements.txt && \
     pip3 install huggingface_hub && \
     deactivate
 
