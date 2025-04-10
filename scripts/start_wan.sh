@@ -6,8 +6,6 @@ source /venv/bin/activate
 cd /workspace/Wan2.1
 TCMALLOC="$(ldconfig -p | grep -Po "libtcmalloc.so.\d" | head -n 1)"
 export LD_PRELOAD="${TCMALLOC}"
-export GRADIO_SERVER_NAME="0.0.0.0"
-export GRADIO_SERVER_PORT="3001"
 export HF_HOME="/workspace"
 nohup python3 gradio/t2v_1.3B_singleGPU.py \
     --prompt_extend_method 'local_qwen' \
